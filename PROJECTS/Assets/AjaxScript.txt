@@ -1,0 +1,13 @@
+<script src="../Asset/Jquery/jQuery.js"></script>
+<script>
+function getPlace(did)
+{
+
+	$.ajax({
+	  url:"../Asset/AjaxPages/AjaxPlaces.php?did="+did,
+	  success: function(html){
+		$("#ddl_place").html(html);
+	  }
+	});
+}
+</script>
